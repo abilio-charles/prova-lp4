@@ -1,0 +1,73 @@
+.header {
+    text-align: left;
+    padding: 20px;
+    background-image: linear-gradient(to right, #000080, #0000FF);
+    color: white;
+    text-shadow: 2px 7px 10px black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.auctionImage {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.auctionTitle, .auctionDescription, .auctionCurrentBid {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+input[type="number"], .enterButton {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.enterButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enterButton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .auctionImage {
+        max-width: 80%;
+    }
+
+    .auctionTitle, .auctionDescription, .auctionCurrentBid {
+        font-size: 1em;
+    }
+
+    .enterButton, input[type="number"] {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .container {
+        padding: 15px;
+    }
+
+    .auctionImage {
+        max-width: 90%;
+    }
+
+    .auctionTitle, .auctionDescription, .auctionCurrentBid {
+        font-size: 0.9em;
+    }
+}
